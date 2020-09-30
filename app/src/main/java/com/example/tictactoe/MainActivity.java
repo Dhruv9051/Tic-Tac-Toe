@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
                     Button playAgain = (Button) findViewById(R.id.playAgain);
                     TextView winnerTextView = (TextView) findViewById(R.id.textView);
-                    //TextView counterZero = (TextView) findViewById(R.id.textView2);
-                    //TextView counterCross = (TextView) findViewById(R.id.textView3);
+                    TextView counterZero = (TextView) findViewById(R.id.textView2);
+                    TextView counterCross = (TextView) findViewById(R.id.textView3);
                     winnerTextView.setText(winner + " won!");
-                    //counterZero.setText("Zero: " + zeroCounter);
-                    //counterCross.setText("Cross: " + crossCounter);
+                    counterZero.setText("Zero: " + zeroCounter);
+                    counterCross.setText("Cross: " + crossCounter);
                     playAgain.setVisibility(View.VISIBLE);
                     winnerTextView.setVisibility(View.VISIBLE);
                     good = false;
